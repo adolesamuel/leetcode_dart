@@ -1,0 +1,14 @@
+name: leetcode
+description: LeetCode Dart solutions
+version: 0.0.1-dev
+
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  meta: ^1.7.0
+
+dev_dependencies:
+  test: ^1.16.0
+  coverage: any
