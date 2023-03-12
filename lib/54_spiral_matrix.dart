@@ -47,15 +47,19 @@ class Solution {
       bool answerIsNotComplete = answer.length < totalLenghtOfAnswer;
       for (int j = firstColumn; j <= lastColumn && answerIsNotComplete; ++j) {
         answer.add(matrix[firstRow][j]);
+        answerIsNotComplete = answer.length < totalLenghtOfAnswer;
       }
       for (int i = firstRow + 1; i <= lastRow - 1 && answerIsNotComplete; ++i) {
         answer.add(matrix[i][lastColumn]);
+        answerIsNotComplete = answer.length < totalLenghtOfAnswer;
       }
       for (int j = lastColumn; j >= firstColumn && answerIsNotComplete; --j) {
         answer.add(matrix[lastRow][j]);
+        answerIsNotComplete = answer.length < totalLenghtOfAnswer;
       }
       for (int i = lastRow - 1; i >= firstRow + 1 && answerIsNotComplete; --i) {
         answer.add(matrix[i][firstColumn]);
+        answerIsNotComplete = answer.length < totalLenghtOfAnswer;
       }
       ++firstRow;
       ++firstColumn;
